@@ -3,7 +3,7 @@
 @section('content')
     <!-- OVERLAY LAYAR KUNCI (Hidden by default) -->
     <div id="lock-screen"
-        class="d-none position-fixed top-0 inset-s-0 w-100 h-100 d-flex flex-column align-items-center justify-content-center bg-dark text-white"
+        class="d-none position-fixed top-0 start-0 w-100 h-100 d-flex flex-column align-items-center justify-content-center bg-dark text-white"
         style="z-index: 9999;">
         <div class="text-center">
             <div class="spinner-border text-success mb-3" style="width: 3rem; height: 3rem;" role="status"></div>
@@ -25,7 +25,7 @@
                         <div class="position-relative">
                             <img src="{{ asset('storage/' . $c->photo) }}" class="card-img-top"
                                 style="">
-                            <div class="selected-badge position-absolute top-0 inset-e-0 m-3 d-none">
+                            <div class="selected-badge position-absolute top-0 end-0 m-3 d-none">
                                 <span class="badge bg-success p-2 px-3">TERPILIH</span>
                             </div>
                         </div>
